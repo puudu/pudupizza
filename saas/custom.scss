@@ -1,0 +1,28 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div{
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+    }
+
+$primary:#FE4C02;
+
+li.nav-item{
+    padding-inline: 10px;
+    border-inline: 5px;
+};
+
+a.nav-link.active{
+    border-top: solid 3px $primary;
+
+};
+
+a.nav-link{
+    border-top: solid 3px gray;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
