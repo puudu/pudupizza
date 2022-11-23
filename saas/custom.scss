@@ -2,13 +2,19 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-div{
+.center{
     display: table-cell;
     text-align:center;
     vertical-align: middle;
     }
 
+.orderImage{
+    width: 100px;
+    height: auto;
+}
+
 $primary:#FE4C02;
+$secondary: #4FB07C;
 
 li.nav-item{
     padding-inline: 10px;

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Pudu Pizza</title>
+    <title>Pizzas | Pudu Pizza</title>
+    <link rel="icon" type="images/x-icon" href="images/logos/icon_orange.png">
     <link rel="stylesheet" href="saas/custom.css">
 </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
-                <div class="container-fluid">
+                <div class="container-fluid center">
                   <a class="navbar-brand" href="index.html" ><img src="images/logos/logo_icon_color.png" style="display:block; max-width:15%; height:auto" alt="Pudu Pizza"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,31 +22,33 @@
                         <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-pizza-slice"></i> Pizzas</a>
+                        <a class="nav-link active" aria-current="page" href="pizzas.html"><i class="fa-solid fa-pizza-slice"></i> Pizzas</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-wine-glass"></i> Bebidas</a>
+                        <a class="nav-link" href="drinks.html"><i class="fa-solid fa-wine-glass"></i> Bebidas</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-ice-cream"></i> Postres</a>
+                        <a class="nav-link" href="desserts.html"><i class="fa-solid fa-ice-cream"></i> Postres</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+                        <a class="nav-link" href="order.html"><i class="fa-solid fa-cart-shopping" id="carritoCount"> a</i> Pedido</a>
                       </li>
                     </ul>
                   </div>
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="container-fluid my-3 pt-3 g-4">
+        <main style="display:none;" id="content">
+            <div class="container-fluid my-3 pt-3 g-4 center">
                 <h1><i class="fa-solid fa-pizza-slice"></i> Pizzas <i class="fa-solid fa-pizza-slice"></i></h1>
-                <div class="row row-cols-1 row-cols-md-4  m-auto" id="pizzasCont">
+                <div class="row row-cols-1 row-cols-md-4  m-auto" id="pizzasCont"">
                 </div>
             </div>
         </main>
     </body>
     
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/fade.js"></script>
     <script src="js/app.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/fb2d6595ca.js" crossorigin="anonymous"></script>
