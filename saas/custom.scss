@@ -30,5 +30,68 @@ a.nav-link{
     border-top: solid 3px gray;
 }
 
+.login-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, black, #FE4C02);
+}
+
+.login-body img{
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    margin: 30px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px black;
+    width: 400px;
+    height: auto;
+}
+
+.login-form .login-title{
+    color: black;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.login-form label{
+    margin-block: 10px;
+}
+
+.login-form label .fa-solid{
+    margin-bottom: 20px;
+    color: #FE4C02;
+    margin-right: 8px;
+}
+
+.login-form label input{
+    outline: none;
+    border:none;
+    color: black;
+    border-bottom: solid 1px #FE4C02;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.login-form label input::placeholder{
+    color: lightgray;
+}
+
+.login-form .form-link{
+    color:#4FB07C;
+    margin-bottom: 15px;
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
