@@ -30,9 +30,18 @@
                       <li class="nav-item">
                         <a class="nav-link" href="desserts.html"><i class="fa-solid fa-ice-cream"></i> Postres</a>
                       </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" onclick="logOut()" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="currentUserDisplay">
+                          <i class="fa-solid fa-user"></i><br>Invitado
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+                        </ul>
+                      </li>
                       <li class="nav-item">
                         <a class="nav-link" href="order.html"><i class="fa-solid fa-cart-shopping" id="carritoCount"> a</i> Pedido</a>
                       </li>
+
                     </ul>
                   </div>
                 </div>
@@ -69,6 +78,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/fade.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/fb2d6595ca.js" crossorigin="anonymous"></script>
 </html>

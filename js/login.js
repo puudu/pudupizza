@@ -1,10 +1,9 @@
 let users = [];
-let currentUser = {
-    email: null,
-    fullname: null,
-    username: null,
-    password: null
-};
+let currentUser = null;
+
+const loginPage = document.querySelector('#login');
+const currentUserDisplay = document.querySelector('#currentUserDisplay');
+const loginPaymentProcess = document.querySelector('#payment-process');
 
 document.addEventListener('DOMContentLoaded', () => {
     users = JSON.parse(localStorage.getItem('users')) || [];
@@ -12,6 +11,34 @@ document.addEventListener('DOMContentLoaded', () => {
     saveUsersToStorage();
     saveCurrentUserToStorage();
 }) // Lee el elemento users y currentUser luego de que el dom es cargado
+
+if (loginPage)
+{
+    button.addEventListener('click', (e) =>{
+        e.preventDefault();
+    })
+}
+if (currentUserDisplay)
+{
+    currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    
+    if (currentUser == null){
+        currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>Invitado';
+    }
+    else{
+        currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>' + currentUser.username;
+    }
+}
+if (loginPaymentProcess && currentUser != null){
+    const _cliente = document.getElementById('cliente');
+    const _correo = document.getElementById('correo');
+
+    _cliente.value = currentUser.fullname;
+    _correo.value = currentUser.email;
+
+    _cliente.setAttribute("disabled", "");
+    _correo.setAttribute("disabled", "");
+}
 
 // Functions
 
@@ -28,6 +55,10 @@ function registerUser(){
         alert("Las contraseñas ingresadas no coinciden");
         return;
     }
+    if (checkPassword(password.value) == false){
+        alert("La contraseña no cumple los requisitos. La contraseña debe contener al menos 8 caracteres, mayúsculas, minúsculas y números.");
+        return;
+    }
 
     const newUserData = {
         email: email.value,
@@ -36,10 +67,15 @@ function registerUser(){
         password: password.value
     }
 
-    const exist = users.some(user => user.username === newUserData.username);
+    const userNameExist = users.some(user => user.username === newUserData.username);
+    const emailExist = users.some(user => user.email === newUserData.email);
 
-    if (exist){
-        alert("Nombre de usuario ya registrado, ingrese otro nombre de usuario");
+    if (userNameExist){
+        alert("Nombre de usuario ya registrado, ingrese otro nombre de usuario.");
+        return;
+    }
+    else if(emailExist){
+        alert("Correo ya registrado, ingrese otro correo.");
         return;
     }
     else{
@@ -93,6 +129,10 @@ function newPassword(){
     }
     else{
         if (newPassword.value === cPassword.value){
+            if (checkPassword(password.value) == false){
+                alert("La contraseña no cumple los requisitos. La contraseña debe contener al menos 8 caracteres, mayúsculas, minúsculas y números.");
+                return;
+            }
             console.log("passwords coincidentes");
             for (const u of users){
                 console.log(u);
@@ -111,6 +151,17 @@ function newPassword(){
     }
 }
 
+function logOut(){
+    currentUser = null;
+    saveCurrentUserToStorage();
+}
+
+function checkPassword(password){
+    // Requerimientos password: 1 MAYUSCULA, 1 minuscula, 1 numero, minimo 8 caracteres
+    const pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
+    return pattern.test(password);
+}
+
 function saveUsersToStorage()
 {
     localStorage.setItem("users", JSON.stringify(users));
@@ -120,11 +171,3 @@ function saveCurrentUserToStorage()
 {
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
 }
-
-// const username = document.getElementById('username');
-// const password = document.getElementById('password');
-// const button = document.getElementById('button');
-// 
-button.addEventListener('click', (e) =>{
-    e.preventDefault();
-})
