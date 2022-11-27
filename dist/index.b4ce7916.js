@@ -84,7 +84,7 @@ const products = [
         id: 110,
         prodCount: 1,
         type: "pizza",
-        name: "Pud\xfa Pizza Supreme",
+        name: "La mejor Chacao Pizza",
         size: "Familiar",
         price: 27990,
         img: "./images/items/pizzas/supreme.png"

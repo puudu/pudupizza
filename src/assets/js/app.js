@@ -8,7 +8,7 @@ const products = [
     { id: 107, prodCount: 1, type:'pizza', name: "Pizza Pollo BBQ", size: "Familiar", price: 7990, img: "./images/items/pizzas/pollobbq.png" },
     { id: 108, prodCount: 1, type:'pizza', name: "Pizza Vegetariana", size: "Familiar", price: 999990, img: "./images/items/pizzas/vegetariana.png" },
     { id: 109, prodCount: 1, type:'pizza', name: "Pizza Doble Pepperoni", size: "Familiar", price: 7990, img: "./images/items/pizzas/doblepepperoni.png" },
-    { id: 110, prodCount: 1, type:'pizza', name: "Pudú Pizza Supreme", size: "Familiar", price: 27990, img: "./images/items/pizzas/supreme.png" },
+    { id: 110, prodCount: 1, type:'pizza', name: "La mejor Chacao Pizza", size: "Familiar", price: 27990, img: "./images/items/pizzas/supreme.png" },
     { id: 201, prodCount: 1, type:'bebida', name: "Coca-Cola lata", size: "350ml", price: 790, img: "./images/items/drinks/1x-coca-cola-lata-350cc.jpg" },
     { id: 202, prodCount: 1, type:'bebida', name: "Coca-Cola light lata", size: "350ml", price: 790, img: "./images/items/drinks/1x-coca-cola-light-lata-350cc.jpg" },
     { id: 203, prodCount: 1, type:'bebida', name: "Fanta lata", size: "350ml", price: 790, img: "./images/items/drinks/1x-fanta-lata-350cc.jpg" },

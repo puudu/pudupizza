@@ -31,11 +31,11 @@
                         <a class="nav-link" href="desserts.html"><i class="fa-solid fa-ice-cream"></i> Postres</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" onclick="logOut()" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="currentUserDisplay">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="currentUserDisplay">
                           <i class="fa-solid fa-user"></i><br>a
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+                          <li><a class="dropdown-item" id="currentUserDisplay_dropitem1" onclick="logOut()" href="login.html">Cerrar sesión</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
@@ -103,7 +103,7 @@
                                     <button class="btn btn-danger" onclick="clearOrder()"><i class="fa-solid fa-trash"></i> Eliminar pedido</button>
                                 </div>
                                 <div class="col-xs-12 col-md-4 text-end">
-                                    <input type="hidden" name="_next" value="https://puduckey.github.io/pudupizza/thanks.html">
+                                    <input type="hidden" name="_next" value="https://pudupizza.netlify.app/thanks.html">
                                     <input type="submit" onclick="clearStorage()" class="btn btn-success btn-block" id="button" value="Realizar pedido" >
                                 </div>
                             </div>

@@ -3,6 +3,7 @@ let currentUser = null;
 
 const loginPage = document.querySelector('#login');
 const currentUserDisplay = document.querySelector('#currentUserDisplay');
+const currentUserDisplay_dropitem1 = document.querySelector('#currentUserDisplay_dropitem1');
 const loginPaymentProcess = document.querySelector('#payment-process');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,9 +25,11 @@ if (currentUserDisplay)
     
     if (currentUser == null){
         currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>Invitado';
+        currentUserDisplay_dropitem1.innerHTML = 'Iniciar sesión';
     }
     else{
         currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>' + currentUser.username;
+        currentUserDisplay_dropitem1.innerHTML = 'Cerrar sesión';
     }
 }
 if (loginPaymentProcess && currentUser != null){

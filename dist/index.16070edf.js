@@ -2,6 +2,7 @@ let users = [];
 let currentUser = null;
 const loginPage = document.querySelector("#login");
 const currentUserDisplay = document.querySelector("#currentUserDisplay");
+const currentUserDisplay_dropitem1 = document.querySelector("#currentUserDisplay_dropitem1");
 const loginPaymentProcess = document.querySelector("#payment-process");
 document.addEventListener("DOMContentLoaded", ()=>{
     users = JSON.parse(localStorage.getItem("users")) || [];
@@ -15,8 +16,13 @@ if (loginPage) button.addEventListener("click", (e)=>{
 });
 if (currentUserDisplay) {
     currentUser = JSON.parse(localStorage.getItem("currentUser"));
-    if (currentUser == null) currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>Invitado';
-    else currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>' + currentUser.username;
+    if (currentUser == null) {
+        currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>Invitado';
+        currentUserDisplay_dropitem1.innerHTML = "Iniciar sesi\xf3n";
+    } else {
+        currentUserDisplay.innerHTML = '<i class="fa-solid fa-user"></i><br>' + currentUser.username;
+        currentUserDisplay_dropitem1.innerHTML = "Cerrar sesi\xf3n";
+    }
 }
 if (loginPaymentProcess && currentUser != null) {
     const _cliente = document.getElementById("cliente");
