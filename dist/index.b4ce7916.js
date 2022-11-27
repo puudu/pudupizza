@@ -469,9 +469,9 @@ function processOrder() {
             <td> ${prod.name} ${prod.size} </td>
             <td> ${price} </td>
             <td> 
-                <button class="btn btn-secondary" onclick="addOne(${prod.id})"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="btn btn-secondary" onclick="addOne(${prod.id})"><i class="fa-solid fa-plus"></i></button>
                  ${prod.prodCount}  
-                <button class="btn btn-secondary" onclick="removeOne(${prod.id})"><i class="fa-solid fa-minus"></i></button>
+                <button type="button" class="btn btn-secondary" onclick="removeOne(${prod.id})"><i class="fa-solid fa-minus"></i></button>
             </td>
             <td> ${subprice} </td>
             <td> <button class="btn btn-danger" onclick="deleteFromOrder(${prod.id})"><i class="fa-solid fa-trash"></i></button> </td>
