@@ -6,7 +6,7 @@ const products = [
         name: "Pizza Napolitana",
         size: "Familiar",
         price: 5990,
-        img: "./assets/images/items/pizzas/napolitana.png"
+        img: "./images/items/pizzas/napolitana.png"
     },
     {
         id: 102,
@@ -15,7 +15,7 @@ const products = [
         name: "Pizza Pepperoni",
         size: "Familiar",
         price: 4990,
-        img: "./assets/images/items/pizzas/pepperoni.png"
+        img: "./images/items/pizzas/pepperoni.png"
     },
     {
         id: 103,
@@ -24,7 +24,7 @@ const products = [
         name: "Pizza Italiana",
         size: "Familiar",
         price: 4990,
-        img: "./assets/images/items/pizzas/italiana.png"
+        img: "./images/items/pizzas/italiana.png"
     },
     {
         id: 104,
@@ -33,7 +33,7 @@ const products = [
         name: "Pizza Americana",
         size: "Familiar",
         price: 5990,
-        img: "./assets/images/items/pizzas/americana.png"
+        img: "./images/items/pizzas/americana.png"
     },
     {
         id: 105,
@@ -42,7 +42,7 @@ const products = [
         name: "Pizza Hawaina",
         size: "Familiar",
         price: 1990,
-        img: "./assets/images/items/pizzas/hawaiana.png"
+        img: "./images/items/pizzas/hawaiana.png"
     },
     {
         id: 106,
@@ -51,7 +51,7 @@ const products = [
         name: "Pizza Texana",
         size: "Familiar",
         price: 7990,
-        img: "./assets/images/items/pizzas/texana.png"
+        img: "./images/items/pizzas/texana.png"
     },
     {
         id: 107,
@@ -60,7 +60,7 @@ const products = [
         name: "Pizza Pollo BBQ",
         size: "Familiar",
         price: 7990,
-        img: "./assets/images/items/pizzas/pollobbq.png"
+        img: "./images/items/pizzas/pollobbq.png"
     },
     {
         id: 108,
@@ -69,7 +69,7 @@ const products = [
         name: "Pizza Vegetariana",
         size: "Familiar",
         price: 999990,
-        img: "./assets/images/items/pizzas/vegetariana.png"
+        img: "./images/items/pizzas/vegetariana.png"
     },
     {
         id: 109,
@@ -78,7 +78,7 @@ const products = [
         name: "Pizza Doble Pepperoni",
         size: "Familiar",
         price: 7990,
-        img: "./assets/images/items/pizzas/doblepepperoni.png"
+        img: "./images/items/pizzas/doblepepperoni.png"
     },
     {
         id: 110,
@@ -87,7 +87,7 @@ const products = [
         name: "Pud\xfa Pizza Supreme",
         size: "Familiar",
         price: 27990,
-        img: "./assets/images/items/pizzas/supreme.png"
+        img: "./images/items/pizzas/supreme.png"
     },
     {
         id: 201,
@@ -96,7 +96,7 @@ const products = [
         name: "Coca-Cola lata",
         size: "350ml",
         price: 790,
-        img: "./assets/images/items/drinks/1x-coca-cola-lata-350cc.jpg"
+        img: "./images/items/drinks/1x-coca-cola-lata-350cc.jpg"
     },
     {
         id: 202,
@@ -105,7 +105,7 @@ const products = [
         name: "Coca-Cola light lata",
         size: "350ml",
         price: 790,
-        img: "./assets/images/items/drinks/1x-coca-cola-light-lata-350cc.jpg"
+        img: "./images/items/drinks/1x-coca-cola-light-lata-350cc.jpg"
     },
     {
         id: 203,
@@ -114,7 +114,7 @@ const products = [
         name: "Fanta lata",
         size: "350ml",
         price: 790,
-        img: "./assets/images/items/drinks/1x-fanta-lata-350cc.jpg"
+        img: "./images/items/drinks/1x-fanta-lata-350cc.jpg"
     },
     {
         id: 204,
@@ -123,7 +123,7 @@ const products = [
         name: "Sprite lata",
         size: "350ml",
         price: 790,
-        img: "./assets/images/items/drinks/1x-sprite-lata-350cc.jpg"
+        img: "./images/items/drinks/1x-sprite-lata-350cc.jpg"
     },
     {
         id: 205,
@@ -132,7 +132,7 @@ const products = [
         name: "Coca-Cola botella",
         size: "1,5L",
         price: 1290,
-        img: "./assets/images/items/drinks/1x-coca-cola-botella-1500cc.jpg"
+        img: "./images/items/drinks/1x-coca-cola-botella-1500cc.jpg"
     },
     {
         id: 206,
@@ -141,7 +141,7 @@ const products = [
         name: "Coca-Cola light botella",
         size: "1,5L",
         price: 1290,
-        img: "./assets/images/items/drinks/1x-coca-cola-light-botella-1500cc.jpg"
+        img: "./images/items/drinks/1x-coca-cola-light-botella-1500cc.jpg"
     },
     {
         id: 207,
@@ -150,7 +150,7 @@ const products = [
         name: "Pepsi botella",
         size: "1,5L",
         price: 1290,
-        img: "./assets/images/items/drinks/1x-pepsi-botella-1500cc.jpg"
+        img: "./images/items/drinks/1x-pepsi-botella-1500cc.jpg"
     },
     {
         id: 208,
@@ -159,7 +159,7 @@ const products = [
         name: "Fanta botella",
         size: "1,5L",
         price: 1290,
-        img: "./assets/images/items/drinks/1x-fanta-botella-1500cc.jpg"
+        img: "./images/items/drinks/1x-fanta-botella-1500cc.jpg"
     },
     {
         id: 209,
@@ -168,7 +168,7 @@ const products = [
         name: "Sprite botella",
         size: "1,5L",
         price: 1290,
-        img: "./assets/images/items/drinks/1x-sprite-botella-1500cc.jpg"
+        img: "./images/items/drinks/1x-sprite-botella-1500cc.jpg"
     },
     {
         id: 210,
@@ -177,7 +177,7 @@ const products = [
         name: "Nectar Whatts naranja botella",
         size: "1,5L",
         price: 1850,
-        img: "./assets/images/items/drinks/1x-nectar-watts-naranja-botella-1500cc.jpg"
+        img: "./images/items/drinks/1x-nectar-watts-naranja-botella-1500cc.jpg"
     },
     {
         id: 211,
@@ -186,7 +186,7 @@ const products = [
         name: "Energetica Monster lata",
         size: "473ml",
         price: 1490,
-        img: "./assets/images/items/drinks/1x-energetica-monster-energy-lata-473cc.jpg"
+        img: "./images/items/drinks/1x-energetica-monster-energy-lata-473cc.jpg"
     },
     {
         id: 212,
@@ -195,7 +195,7 @@ const products = [
         name: "Energetica Red Bull lata",
         size: "250ml",
         price: 1690,
-        img: "./assets/images/items/drinks/1x-energetica-red-bull-lata-250cc.jpg"
+        img: "./images/items/drinks/1x-energetica-red-bull-lata-250cc.jpg"
     },
     {
         id: 213,
@@ -204,7 +204,7 @@ const products = [
         name: "Energetica Mr Big botella",
         size: "1,5L",
         price: 3590,
-        img: "./assets/images/items/drinks/1x-energetica-mr-big-original-botella-1500cc.jpg"
+        img: "./images/items/drinks/1x-energetica-mr-big-original-botella-1500cc.jpg"
     },
     {
         id: 214,
@@ -213,7 +213,7 @@ const products = [
         name: "Cerveza Becker 4,5\xb0 lata",
         size: "473ml",
         price: 450,
-        img: "./assets/images/items/drinks/1x-becker-45-lata-473cc.jpg"
+        img: "./images/items/drinks/1x-becker-45-lata-473cc.jpg"
     },
     {
         id: 215,
@@ -222,7 +222,7 @@ const products = [
         name: "Cerveza Escudo 5,5\xb0 lata",
         size: "470ml",
         price: 450,
-        img: "./assets/images/items/drinks/1x-escudo-55-lata-470cc.jpg"
+        img: "./images/items/drinks/1x-escudo-55-lata-470cc.jpg"
     },
     {
         id: 216,
@@ -231,7 +231,7 @@ const products = [
         name: "Cerveza Royal Guard 5\xb0 lata",
         size: "470ml",
         price: 650,
-        img: "./assets/images/items/drinks/1x-royal-guard-lata-330cc.jpg"
+        img: "./images/items/drinks/1x-royal-guard-lata-330cc.jpg"
     },
     {
         id: 217,
@@ -240,7 +240,7 @@ const products = [
         name: "Cerveza Corona 4,5\xb0 botella",
         size: "710ml",
         price: 1590,
-        img: "./assets/images/items/drinks/1x-corona-45-botella-330cc.jpg"
+        img: "./images/items/drinks/1x-corona-45-botella-330cc.jpg"
     },
     {
         id: 301,
@@ -249,7 +249,7 @@ const products = [
         name: "Postre Manjarate",
         size: "80g",
         price: 490,
-        img: "./assets/images/items/dessert/7802900401016-1-300x300.jpg"
+        img: "./images/items/dessert/7802900401016-1-300x300.jpg"
     },
     {
         id: 302,
@@ -258,7 +258,7 @@ const products = [
         name: "Postre Chandelle",
         size: "130g",
         price: 559,
-        img: "./assets/images/items/dessert/78093676-1-300x300.jpg"
+        img: "./images/items/dessert/78093676-1-300x300.jpg"
     },
     {
         id: 303,
@@ -267,7 +267,7 @@ const products = [
         name: "Chocolate Trencito",
         size: "150g",
         price: 1390,
-        img: "./assets/images/items/dessert/7802230070029-2-300x300.jpg"
+        img: "./images/items/dessert/7802230070029-2-300x300.jpg"
     },
     {
         id: 304,
@@ -276,7 +276,7 @@ const products = [
         name: "Chocolate Sahne-Nuss",
         size: "250g",
         price: 2390,
-        img: "./assets/images/items/dessert/7802230070227-2-300x300.jpg"
+        img: "./images/items/dessert/7802230070227-2-300x300.jpg"
     },
     {
         id: 305,
@@ -285,7 +285,7 @@ const products = [
         name: "Helado Savory Pi\xf1a",
         size: "1L",
         price: 2290,
-        img: "./assets/images/items/dessert/7802710831119-2-300x300.jpg"
+        img: "./images/items/dessert/7802710831119-2-300x300.jpg"
     },
     {
         id: 306,
@@ -294,7 +294,7 @@ const products = [
         name: "Helado Panda Chocolate",
         size: "1L",
         price: 2390,
-        img: "./assets/images/items/dessert/7802715071053-300x300.png"
+        img: "./images/items/dessert/7802715071053-300x300.png"
     },
     {
         id: 307,
@@ -303,7 +303,7 @@ const products = [
         name: "Helado Panda Cassata",
         size: "2.5L",
         price: 4990,
-        img: "./assets/images/items/dessert/7801552000141-300x300.png"
+        img: "./images/items/dessert/7801552000141-300x300.png"
     },
     {
         id: 308,
@@ -312,7 +312,7 @@ const products = [
         name: "Helados Trendy Mini Cono",
         size: "10 unidades",
         price: 6490,
-        img: "./assets/images/items/dessert/7801552005788-300x300.png"
+        img: "./images/items/dessert/7801552005788-300x300.png"
     }
 ];
 // Create our number formatter.
