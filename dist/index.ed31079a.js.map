@@ -1,0 +1,1 @@
+{"mappings":"AAAA,EAAE,UAAU,KAAK,CAAC,WAAU;IACxB,4BAA4B;IAC5B,EAAE,YAAY,MAAM;AACxB","sources":["src/assets/js/fade.js"],"sourcesContent":["$(document).ready(function(){\r\n    //$('#products').fadeOut(0);\r\n    $('#content').fadeIn();\r\n});"],"names":[],"version":3,"file":"index.ed31079a.js.map","sourceRoot":"/__parcel_source_root/"}
