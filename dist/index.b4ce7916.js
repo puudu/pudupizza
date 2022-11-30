@@ -347,7 +347,7 @@ if (pizzasCont != null) {
                   <h5 class="card-title">${prod.name}</h5>
                   <p class="card-text">Tamaño ${prod.size}</p>
                   <p class="card-text">${price}</p>
-                  <a onClick="addToOrder(${prod.id})" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Añadir a pedido</a>
+                  <a onClick="addToOrder(${prod.id});liveToast();" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Añadir a pedido</a>
                 </div>
             </div>
         </div>
@@ -368,7 +368,7 @@ if (drinksCont != null) {
                   <h5 class="card-title">${prod.name}</h5>
                   <p class="card-text">${prod.size}</p>
                   <p class="card-text">${price}</p>
-                  <a onClick="addToOrder(${prod.id})" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Añadir a pedido</a>
+                  <a onClick="addToOrder(${prod.id});liveToast();" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Añadir a pedido</a>
                 </div>
             </div>
         </div>
@@ -389,7 +389,7 @@ if (dessertCont != null) {
                   <h5 class="card-title">${prod.name}</h5>
                   <p class="card-text">${prod.size}</p>
                   <p class="card-text">${price}</p>
-                  <a onClick="addToOrder(${prod.id})" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Añadir a pedido</a>
+                  <a onClick="addToOrder(${prod.id});liveToast();" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Añadir a pedido</a>
                 </div>
             </div>
         </div>

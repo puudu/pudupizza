@@ -53,12 +53,27 @@
                 </div>
             </div>
         </main>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="900">
+            <div class="toast-header">
+              <img src="./assets/images/logos/icon_orange.png" style="width: 20px;" class="rounded me-2" alt="...">
+              <strong class="me-auto">Pudú Pizza</strong>
+              <small>Ahora</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Se ha agregado tu pedido.
+            </div>
+          </div>
+        </div>
     </body>
     
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./assets/js/fade.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/liveToastBtn.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/fb2d6595ca.js" crossorigin="anonymous"></script>
 </html>
